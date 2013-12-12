@@ -1,9 +1,23 @@
 * {
 	margin: 0;
 }
-html, body {
+html {
 	height: 100%;
 }
+body 
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #C0C0C0;
+	height: 100%;
+}
+
+body.banner
+{
+	background-image: url("images/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: left top
+}
+
 .wrapper {
 	min-height: 100%;
 	height: auto !important;
@@ -22,8 +36,9 @@ html, body {
 #navlist
 {
 	list-style-type:none;
-	margin:0;
-	padding:0;
+	margin-top: 250px;
+	margin-bottom: 20px;
+	margin-left: 200px;
 	overflow:hidden;
 }
 #navlist li
@@ -33,31 +48,50 @@ html, body {
 	padding-right: 10px;
 	text-align: center;
 }
-#navlist a
+.navbutton
 {
 	display:block;
-	width:120px;
+	width:200px;
 	background-color: #303030;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius:6px;
 	color: #fff;
-	font-size: 20px;
+	font-size: 30px;
 	text-decoration: none;
 	cursor: pointer;
 
 }
-#navlink:hover
+.navbutton:hover
 {
 	border: none;
-    background:red;
+    background:#706e70;
     box-shadow: 0px 0px 1px #777;
+}
+
+.navbuttonactive
+{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #303030), color-stop(1, #706e70) );
+	background:-moz-linear-gradient( center top, #303030 5%, #706e70 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#303030', endColorstr='#706e70');
+	display:block;
+	width:200px;
+	background-color: #303030;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:6px;
+	color: #fff;
+	font-size: 30px;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 #profilepic
 {
 	border: 5px ridge #545454;
-	margin-right: 10px;
+	margin-right: 20px;
+	margin-left: 5px;
+	margin-top: 3px;
 }
 .footer ul
 {
@@ -70,15 +104,15 @@ html, body {
 	display: inline;
 	font-size: 12px;
 }
-body 
-{
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background-color: #C0C0C0;
-}
-
 .title
 {
 	font-size: 72px;
 	text-align: center;
 	margin-bottom: 50px;
+}
+.bodytext
+{
+	margin-left: 50px;
+	max-width: 900px; 
+	text-align: justify;
 }
