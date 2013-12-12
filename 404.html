@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>Page Not Found</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(window).bind("load", function() { 
+	       var footerHeight = 0,
+	           footerTop = 0,
+	           $footer = $("#footer");		           
+	       positionFooter();		       
+	       function positionFooter() {	       
+                footerHeight = $footer.height();
+                footerTop = ($(window).scrollTop()+$(window).height()-footerHeight)+"px";       
+                if ( ($(document.body).height()+footerHeight) < $(window).height()) {
+                   $footer.css({
+                        position: "absolute"
+                   }).animate({
+                        top: footerTop
+                   })
+               } else {
+                   $footer.css({
+                        position: "static"
+                   })
+               }
+               $footer.css("center", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
+	               
+	       }
+	       $(window)
+	               .scroll(positionFooter)
+	               .resize(positionFooter)
+	               
+		});
+	</script>
+</header>
+<body>
+	<p class="title">
+		404
+	</p>
+	<p style="text-align:center; font-size:26px;">
+		The requested page was not found!
+	</p>
+	<div><img src="robot.png" style="display: block; margin-left: auto; margin-right: auto;" width="293" height="400">
+	<p style="text-align:center; margin-bottom:10px;">
+		Click <a href="index.html">here</a> to return to the homepage.
+	</p>
+	<p style="text-align:center;">
+		To report a problem with the site, click <a href="mailto:dexter.w.duckworth@gmail.com?subject=Error Report: dexterduckworth.com">here</a>
+	</p>
+	<div id="footer">
+	    <ul>
+	        <li>Hosted by <a href="http://pages.github.com/">Github Pages</a></li>
+	        <li>|</li>
+	        <li>Source code available <a href="http://github.com/dexterduck/dexterduck.github.io">here</a></li>
+	    </ul>
+	</div>
+</body>
+</html>
