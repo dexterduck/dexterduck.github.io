@@ -1,0 +1,46 @@
+#navlist
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+#navelement
+{
+	float:left;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+#navlink
+{
+	display:block;
+	width:120px;
+	background-color: #303030;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:6px;
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	cursor: pointer;
+
+}
+#navlink:hover
+{
+	border: none;
+    background:red;
+    box-shadow: 0px 0px 1px #777;
+}
+
+#profilepic
+{
+	border: 5px ridge #545454;
+	margin-right: 10px;
+}
+
+body 
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #C0C0C0;
+}
