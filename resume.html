@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>Dexter Duckworth | Resume/CV</title>
+	<link rel="stylesheet" href="style.css" />
+	<script>
+		function showResume() {
+   			if (document.getElementById('resume').style.display == "none") {
+   				document.getElementById('resume').style.display = "block";
+   				document.getElementById("resumebutton").className = "divbuttonactive";
+   			}
+   			else {
+   				document.getElementById('resume').style.display = "none";
+   				document.getElementById("resumebutton").className = "divbutton";
+   			}
+		}
+		function showCV() {
+   			if (document.getElementById('cv').style.display == "none") {
+   				document.getElementById('cv').style.display = "block";
+   				document.getElementById("cvbutton").className = "divbuttonactive";
+   			}
+   			else {
+   				document.getElementById('cv').style.display = "none";
+   				document.getElementById("cvbutton").className = "divbutton";
+   			}
+		}
+	</script>
+</header>
+<body class="banner">
+	<div class="wrapper">
+	<ul id="navlist">
+		<li><a class="navbutton"  href="index.html">Home</a></li>
+		<li><a class="navbuttonactive">Resume/CV</a></li>
+		<li><a class="navbutton" href="projects.html">Projects</a></li>
+		<li><a class="navbutton" href="links.html">Web Links</a></li>
+	</ul>   
+	<div style="text-align:center;">
+	<input type="button" class="divbutton" id="resumebutton" value="Resume" onclick="showResume()"/>
+	<div id="resume" style="display:none;">
+		<object data="docs/Duckworth_Resume.pdf" type="application/pdf" width="850" height="800" syle="margin:0 auto;">
+		  p>It appears your browser doesn't support viewing PDFs. You can download the file directly by clicking <a href="docs/Duckworth_Resume.pdf">here</a>.</p>  
+		</object>
+	</div>
+	<p style="margin-bottom:50px;"></p>
+	<input type="button" class="divbutton" id="cvbutton" value="CV" onclick="showCV()"/>
+	<div id="cv" style="display:none;">
+		<object data="docs/Duckworth_CV.pdf" type="application/pdf" width="850" height="800" syle="margin:0 auto;">
+		  p>It appears your browser doesn't support viewing PDFs. You can download the file directly by clicking <a href="docs/Duckworth_CV.pdf">here</a>.</p>  
+		</object>
+	</div>
+	</div>
+	<div class="push"></div>
+	</div>
+    <div class="footer">
+        <ul>
+            <li>Hosted by <a href="http://pages.github.com/">Github Pages</a></li>
+            <li>|</li>
+            <li>Source code available <a href="http://github.com/dexterduck/dexterduck.github.io">here</a></li>
+            <li>|</li>
+            <li>&copy 2013 Dexter Duckworth</li>
+        </ul>
+    </div>
+</body>
+</html>
