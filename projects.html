@@ -12,27 +12,65 @@
 		<li><a class="navbuttonactive" href="projects.html">Projects</a></li>
 		<li><a class="navbutton" href="links.html">Web Links</a></li>
 	</ul>
-	<div style="background-color:#06A2CB; float:left; width:1100px; height:485px; margin-top:25px; margin-left: 5%; "></div>
-	<div style="margin-top:50px; width:1100px; height:485px; background-color: #606060; padding-bottom: 5px; font-size: 20px; float: left; margin-left: -1075px">
+	<div style="background-color:#06A2CB; float:left; width:1200px; height:310px; margin: 25px 50px 30px 2%; position:relative;">
+	<div style="margin-top:25px; margin-left:25px; width:1200px; height:310px; background-color: #606060; padding-bottom: 5px; font-size: 18px; float: left; position:absolute;">
 	<p>
-	<img src="images/profile.jpg" width="420" height="480" id="profilepic">
+	<img src="images/led.JPG" width="400" height="305" id="profilepic">
+	</p>
+	<h2 style="font-size:36px; margin-left:700px;">
+		Robot Intent
+	</h2>
+	<p id="caption" style="margin-left:690px;">STARS Lab, Mississippi State</p>
+	<p class="bodytext">
+		The goals of this project are to determine the most effective method for a robot to convey pending actions to nearby users as well as the most intuitive way for an operator to override the robot's pending action with a new command. 
 	</p>
 	<p class="bodytext">
-		My name is Dexter Duckworth. I am a junior studying computer engineering at Mississippi State University. My primary area of interest is robotics with specialization in human-robot interaction and biomimetics. I have spent the last three years working in the STARS lab at Mississippi State doing research in human-robot interaction and spent a summer doing field robotics research in the CRASAR lab at Texas A &amp M University.
+		The targeted users for this project are law enforcement personnel. To that end, we are working with the Starkville SWAT team to determine what capabilities they need in a robot and how to seamlessly integrate our project with their normal operating proceedure. 
+	</p>
+	<p class="bodytext">
+		As project lead, I am responsible for code writing and software design as well as supervising members of the team. The robot we are using is a Turtlebot with an onboard Kinect. The robot is programmed using RosPy and Git is used for version control.
 	</p>  
+	</div>  
+	</div>
+
+	<div style="background-color:#06A2CB; float:left; width:1400px; height:315px; margin: 25px 25px 30px 25%; position:relative;">
+	<div style="margin-top:25px; margin-left:-25px; width:1400px; height:315px; background-color: #606060; padding-bottom: 5px; font-size: 18px; float: right; position:absolute;">
+	<p>
+	<img src="images/payload.JPG" width="500" height="310" style="border: 5px solid #000000; margin-left: 10px; float: right;">
+	</p>
+	<h2 style="font-size:36px; margin-left:225px;">
+		Nuclear Sensor Positioning
+	</h2>
+	<p id="caption" style="margin-left:350px;">CRASAR, Texas A &amp M</p>
 	<p class="bodytext">
-		Most of my lab work has been in Python, specifically RosPy, the Python version of the Robot Operating System. I have also worked extensively C/C++ both for simple Arduino projects and operating system design. I have some web development experience, including HTML/CSS, Javascript, PHP, and MySQL.
+		I participated in the 2013 Computing for Disasters REU where I was an observer at a live nuclear exercise. Emergency responders attempted to use a Packbot robot to locate radiation inside a building, but were unable to isolate the source due to inconsistent readings. Eventually, one of the operators tried driving the robot backwards and was able to find the source almost immediately. After the exercise, I analyzed the data and discovered that because the Packbot's radiation sensor is on the back of the robot, the robot's chassis can obstruct the sensor so that it only gathers accurate data when the robot is driven backward. 
 	</p>
 	<p class="bodytext">
-		In my free time, I like to cook and play guitar. I have played guitar for about 8 years and I enjoy covering artists such as Dispatch, Mumford and Sons, Frank Sinatra, and Jonathan Coulton. When I have time, I play shows in the Memphis area. I have a dog named Willow who is a blue tick coonhound. Pictures of her can be found <a href="willow.html" class="fancylink">here</a>.
+		I designed a payload designed to be mounted on the front of a robot for accurate readings. The payload holds a radiation sensor as well as a small camera and can transmit readings over serial bus and log them to an onboard SD card. I wrote a paper based on my summer findings that I presented at the 2013 Safety, Security, and Rescue Robotics conference in Sweden.
 	</p>
 	</div>  
-	<div style="float:right; margin:50px 5% 0 0;">
-		<a class="twitter-timeline" link-color="#06A2CB" data-theme="dark" data-dnt="true" width="500" height="600" href="https://twitter.com/dexterduckworth" data-widget-id="411727174652026881">Tweets by @dexterduckworth</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+
+	<div style="background-color:#06A2CB; float:left; width:1000px; height:315px; margin: 25px 50px 30px 2%; position:relative;">
+	<div style="margin-top:25px; margin-left:25px; width:1000px; height:315px; background-color: #606060; padding-bottom: 5px; font-size: 18px; float: left; position:absolute;">
+	<p>
+	<img src="images/keepon.JPG" width="260" height="310" id="profilepic">
+	</p>
+	<h2 style="font-size:36px; margin-left:550px;">
+		myKeepon
+	</h2>
+	<p id="caption" style="margin-left:525px;">STARS Lab, Mississippi State</p>
+	<p class="bodytext">
+		The Keepon is a small robot created by BeatBots for autism research. Unfortunately, the lab version costs $10,000. Luckily the creators made the $50 toy version relatively easy to hack. Using an arduino and a python script I have set up a myKeepon to be controlled by an Xbox controller or in batch mode by a text file of commands. Eventually, this robot will be used to study the effect of a robot's form factor on how subjects interact with it. 
+	</p>
+	<p class="bodytext">
+		I plan a redesign of this robot soon using a pcDuino microcontroller. This will let me add wireless networking, sound playback, and more advanced motor control by designing the project in ROS.
+	</p>
+	</div>  
+	</div>
+
 	</div>
 	<div class="push"></div>
-	</div>
     <div class="footer">
         <ul>
             <li>Hosted by <a href="http://pages.github.com/" class="fancylink">Github Pages</a></li>
