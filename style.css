@@ -25,11 +25,12 @@ body.banner
 	margin: 0 auto -50px;
 }
 .push {
+	clear: both;
+	width: 100%;
 	height: 50px;
 }
 .footer {
 	height: 50px;
-	width: 80%;
 	margin-left: auto ;
  	margin-right: auto ;
 }
@@ -40,6 +41,7 @@ body.banner
 	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 0;
 	width: 880px;
 	overflow:hidden;
 	text-align: center;
@@ -91,11 +93,11 @@ body.banner
 {
 	border: 5px solid #000000;
 	margin-right: 20px;
-	margin-left: 5px;
-	margin-top: 3px;
+	float: left;
 }
 .footer ul
 {
+	padding-left: 0;
 	list-style-type: none;
 	overflow:hidden;
 	text-align: center;
@@ -114,8 +116,8 @@ body.banner
 .bodytext
 {
 	margin-left: 25px;
-	max-width: 900px; 
-	text-align: justify;
+	text-align: left;
+	text-indent: 50px;
 }
 
 .divbutton
