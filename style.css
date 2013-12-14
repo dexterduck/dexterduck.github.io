@@ -22,13 +22,13 @@ body.banner
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -4em;
+	margin: 0 auto -50px;
 }
 .push {
-	height: 4em;
+	height: 50px;
 }
 .footer {
-	height: 4em;
+	height: 50px;
 	width: 80%;
 	margin-left: auto ;
  	margin-right: auto ;
@@ -38,15 +38,17 @@ body.banner
 	list-style-type:none;
 	margin-top: 250px;
 	margin-bottom: 20px;
-	margin-left: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 880px;
 	overflow:hidden;
+	text-align: center;
 }
 #navlist li
 {
 	float:left;
 	padding-left: 10px;
 	padding-right: 10px;
-	text-align: center;
 }
 .navbutton
 {
@@ -87,7 +89,7 @@ body.banner
 
 #profilepic
 {
-	border: 5px ridge #545454;
+	border: 5px solid #000000;
 	margin-right: 20px;
 	margin-left: 5px;
 	margin-top: 3px;
@@ -111,7 +113,7 @@ body.banner
 }
 .bodytext
 {
-	margin-left: 50px;
+	margin-left: 25px;
 	max-width: 900px; 
 	text-align: justify;
 }
@@ -150,4 +152,41 @@ body.banner
 	text-decoration: none;
 	cursor: pointer;
 	margin-top: 80px;
+}
+
+.textbox
+{
+	margin-top: 50px;
+	width:650px; 
+	height:285px;
+	background-color: #606060;
+	padding-bottom: 5px;
+	font-size: 22px;
+}
+
+a.fancylink
+{
+	text-decoration: none;
+}
+a.fancylink:link
+{
+	color: #06A2CB;
+}
+a.fancylink:visited
+{
+	color: #06A2CB;
+}
+a.fancylink:hover
+{
+	text-decoration: underline;
+}
+#caption
+{
+	color: #C0C0C0;
+	font-style: italic;
+	font-size: 18px;
+}
+#linkentry
+{
+	margin-bottom:20px;
 }
