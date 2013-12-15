@@ -141,7 +141,7 @@ body.banner
     box-shadow: 1px 0px 1px #777;
 }
 .divbutton:after {
-    content: url('images/sidearrow.png');
+    content: url("images/sidearrow.png");
     float:right;
     -webkit-transform: scale(.25);
     margin: -24px -20px 0 0;
@@ -167,7 +167,7 @@ body.banner
 }
 .divbuttonactive:after
 {
-	content: url('images/downarrow.png');
+	content: url("images/downarrow.png");
     float:right;
     -webkit-transform: scale(.25);
     margin: -24px -20px -20px 10px;
