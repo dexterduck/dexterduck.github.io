@@ -169,8 +169,11 @@ body.banner
 {
 	content: url("images/downarrow.png");
     float:right;
-    -webkit-transform: scale(.25);
-    transform: scale(.25);
+    -webkit-transform: scale(0.25);  
+    -moz-transform: scale(0.25);  
+    -ms-transform: scale(0.25);  
+    -o-transform: scale(0.25);  
+    transform: scale(0.25);
     margin: -24px -20px -20px 10px;
 }
 
