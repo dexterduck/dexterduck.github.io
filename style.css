@@ -143,7 +143,7 @@ body.banner
 .divbutton:after {
     content: url("images/sidearrow.png");
     float:right;
-    -webkit-transform: scale(.25);
+    transform: scale(.25);
     margin: -24px -20px 0 0;
 }
 
