@@ -3,6 +3,7 @@ languageCode = "en-us"
 theme = "introduction"
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
+publishDir = "docs"
 
 [params]
     themeStyle = "auto"
