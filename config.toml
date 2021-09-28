@@ -1,0 +1,49 @@
+baseURL = "https://dexterduckworth.com"
+languageCode = "en-us"
+theme = "introduction"
+DefaultContentLanguage = "en"
+enableRobotsTXT = true
+
+[params]
+    themeStyle = "auto"
+    showRSSButton = false
+    fadeIn = true
+    fadeInIndex = false
+    email = "dexter@dkwrth.com"
+
+    [params.home]
+        localTime = false
+        timeZone = "America/New_York"
+        timeFormat = "en-US"
+
+    [params.share]
+        twitter = true
+        facebook = true
+        pinterest = true
+
+    [[params.social]]
+        url = "https://twitter.com/dexterduckworth"
+        icon  = "twitter"
+        icon_pack = "fab"
+    [[params.social]]
+        url   = "https://www.linkedin.com/in/dexter-duckworth/"
+        icon  = "linkedin-in"
+        icon_pack = "fab"
+    [[params.social]]
+        url = "mailto:dexter@dkwrth.com"
+        icon = "paper-plane"
+        icon_pack = "fas"
+    [[params.social]]
+        url   = "https://github.com/dexterduck"
+        icon  = "github"
+        icon_pack = "fab"
+
+[languages]
+    [languages.en]
+        languageName = "English"
+        languageCode = "en-us"
+        contentDir = "content/en"
+        weight = 0
+        title = "Dexter Duckworth"
+        [languages.en.params]
+            # description = ""
