@@ -1,50 +1,81 @@
 baseURL = "https://dexterduckworth.com"
-languageCode = "en-us"
-theme = "introduction"
+theme = "LoveIt"
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
 publishDir = "docs"
 
+[author]
+name = "Dex Duckworth"
+email = "dexter@dkwrth.com"
+
 [params]
-    themeStyle = "auto"
-    showRSSButton = false
-    fadeIn = true
-    fadeInIndex = false
-    email = "dexter@dkwrth.com"
 
-    [params.home]
-        localTime = false
-        timeZone = "America/New_York"
-        timeFormat = "en-US"
+[params.home]
+localTime = false
+timeZone = "America/New_York"
+timeFormat = "en-US"
 
-    [params.share]
-        twitter = true
-        facebook = true
-        pinterest = true
+[params.home.profile]
+enable = true
+avatarURL = "/images/profile.jpg"
+title = "Dex Duckworth"
+subtitle = "Machine Learning · Data Engineering  · Neurotechnology"
+social = true
+typeit = true
 
-    [[params.social]]
-        url = "https://twitter.com/dexterduckworth"
-        icon  = "twitter"
-        icon_pack = "fab"
-    [[params.social]]
-        url   = "https://www.linkedin.com/in/dexter-duckworth/"
-        icon  = "linkedin-in"
-        icon_pack = "fab"
-    [[params.social]]
-        url = "mailto:dexter@dkwrth.com"
-        icon = "paper-plane"
-        icon_pack = "fas"
-    [[params.social]]
-        url   = "https://github.com/dexterduck"
-        icon  = "github"
-        icon_pack = "fab"
+[params.header.title]
+name = "Dex Duckworth"
+
+[params.footer]
+enable = true
+hugo = true
+copyright = true
+author = true
+
+[params.social]
+GitHub = "dexterduck"
+Twitter = "dexterduckworth"
+Linkedin = "dexter-duckworth"
+Email = "dexter@dkwrth.com"
+RSS = true
+
+[params.page.code]
+copy = true
+maxShownLines = 100
+
+[params.page.share]
+enable = true
+Twitter = true
+Linkedin = true
+HackerNews = true
+Reddit = true
+
+[markup.highlight]
+style = 'solarized-dark'
+lineNos = true
+noClasses = false
 
 [languages]
-    [languages.en]
-        languageName = "English"
-        languageCode = "en-us"
-        contentDir = "content/en"
-        weight = 0
-        title = "Dexter Duckworth"
-        [languages.en.params]
-            # description = ""
+[languages.en]
+languageName = "English"
+languageCode = "en-us"
+weight = 1
+title = "Dex Duckworth"
+
+[[languages.en.menu.main]]
+weight = 1
+identifier = "about"
+name = "About"
+url = "/about/"
+
+[[languages.en.menu.main]]
+weight = 2
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+
+[[languages.en.menu.main]]
+weight = 3
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
